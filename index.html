@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel Of Names - Custom Spin Wheel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎡 Spin & Win Game</h1>
+
+<div class="wrapper">
+    <textarea id="names" placeholder="Enter your items here... (one per line)">
+Apple
+Banana
+Chocolate
+Mobile Cover
+Free Coffee
+Gift Voucher
+    </textarea>
+
+    <button id="updateBtn">Update Wheel</button>
+
+    <div class="wheel-container">
+        <canvas id="wheelCanvas" width="400" height="400"></canvas>
+        <button id="spinBtn" class="spin-btn">SPIN</button>
+    </div>
+
+    <div id="resultBox"></div>
+</div>
+
+
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <h2 id="popupText"></h2>
+        <button id="closePopup">OK</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

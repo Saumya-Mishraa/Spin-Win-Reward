@@ -1,0 +1,140 @@
+body {
+    background: #ffe3f6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #d6008a;
+    font-size: 36px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #d6008a;
+    border-radius: 10px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #d6008a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #b10072;
+}
+
+.wheel-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+canvas {
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 0 15px #0003;
+}
+
+.spin-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* POPUP BOX */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-box {
+    background: white;
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    animation: pop .3s ease-out;
+    text-align: center;
+}
+
+.popup-box h2 {
+    color: #d6008a;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#closePopup {
+    background: #d6008a;
+    font-size: 18px;
+}
+
+@keyframes pop {
+    from { transform: scale(.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    textarea {
+        height: 100px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .wrapper {
+        max-width: 95%;
+    }
+
+    canvas {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    .spin-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .popup-box {
+        width: 85%;
+        padding: 20px;
+    }
+
+    .popup-box h2 {
+        font-size: 22px;
+    }
+}
+
